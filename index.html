@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardena</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="shortcut icon" href="./assets/images/svg/navbar-logo.svg" type="image/x-icon">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Gardena">
+    <meta name="description" content="Keep your Plant alive">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Gardena">
+    <meta property="og:description" content="Keep your Plant alive">
+    <meta property="og:image" content="https://i.ibb.co/qY9LSYX/g.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Gardena">
+    <meta property="twitter:description" content="Keep your Plant alive">
+    <meta property="twitter:image" content="https://i.ibb.co/qY9LSYX/g.png">
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+
+<body class=" body-bg">
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader mx-5 d-flex flex-column justify-content-center align-items-center w-100">
+            <img class="w-100  max-500" src="./assets/images/svg/loader.svg" alt="svg">
+
+        </div>
+    </div>
+    <header class=" position-relative  z-2   ">
+        <div class="container max-w-1540 ">
+            <nav class=" py-navbar ">
+                <div class=" d-flex align-items-center justify-content-between z-3 position-relative">
+                    <div class=" d-flex align-items-end gap-22">
+                        <img class="cp " src="./assets/images/svg/navbar-logo.svg" alt="logo">
+                        <h2 class=" mb-0 poppins fw-700 fs-3xl lh-35 white pb-3 cp">Gardena</h2>
+                    </div>
+                    <div class="d-flex mb-0 gap-59 align-items-center mobile_view" id="navbar">
+                        <div class=" nav-search-box d-flex gap-2 cp">
+                            <img src="./assets/images/svg/seach-icon.svg" alt="seach-icon">
+                            <input type="search" name="search"
+                                class=" w-100 bg-transparent border-0 white fw-500 poppins fs-sm "
+                                style="outline: none;">
+                        </div>
+                        <div class=" d-flex align-items-center gap-29">
+                            <h2 class=" white mb-0 poppins fw-500 fs-2xl lh-30 cp">Menu</h2>
+                            <img class="d-none d-md-block cp" src="./assets/images/svg/menu.svg" alt="menu-icon">
+                        </div>
+
+                    </div>
+                    <div onclick="openNav()" class="menu d-block d-md-none ">
+                        <img src="./assets/images/svg/menu.svg" alt="menu">
+                    </div>
+                </div>
+
+            </nav>
+            <div class="row pt-header flex-column-reverse flex-lg-row d-flex align-items-center">
+                <div class="col-lg-6 mt-5 mt-lg-0  justify-content-center d-flex justify-content-lg-start z-2">
+                    <div class=" d-flex flex-column">
+                        <h2 class=" mb-0 white poppins fw-400 fs-5xl lh-84 max-412 text-center text-lg-start ">Keep
+                            your
+                            Plant alive</h2>
+                        <p class=" max-header-para text-center text-lg-start poppins fw-400 fs-lg lh-22 mb-0 white">
+                            Lorem
+                            ipsum dolor sit
+                            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliquav</p>
+                        <div
+                            class=" d-flex justify-content-center justify-content-lg-start gap-grow align-items-center  pt-33">
+                            <button class=" btn-grow text-nowrap green poppins fw-600 fs-xl lh-25">Grow Now</button>
+
+                            <div class=" d-flex gap-demo align-items-center">
+                                <div class=" circle-1 d-flex align-items-center justify-content-center">
+                                    <img src="./assets/images/play.png" alt="play">
+                                </div>
+                                <p class="poppins fw-500 fs-xl lh-25 white opacity-75 mb-0">Demo...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 justify-content-center z-2 d-flex justify-content-lg-end z-2">
+                    <div class=" d-flex flex-column w-100 align-items-center align-items-lg-end">
+                        <div class=" header-slider w-100 max-w-370">
+                            <div class="outerbox">
+                                <div class=" header-slider-box w-100 position-relative gradient-border">
+                                    <div class=" d-flex flex-column gap-16">
+                                        <h2 class="poppins fw-400 fs-lg white mb-0 lh-22">Garden Maintainer</h2>
+                                        <div class=" d-flex gap-17">
+                                            <div class=" d-flex gap-13 align-items-center">
+                                                <div class=" d-flex gap_2  ">
+                                                    <h2 class=" poppins fw-400 fs-lg lh-22 white mb-0 pt_2 ">4.6
+                                                    </h2>
+                                                    <img src="./assets/images/svg/star.svg" alt="star">
+                                                </div>
+                                                <div class=" right-line">
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex gap_7 align-items-center">
+                                                <h2 class=" poppins fw-400 fs-lg lh-22 white mb-0 text-nowrap pt_2">
+                                                    1.1
+                                                    k
+                                                </h2>
+                                                <img src="./assets/images/svg/smile.svg" alt="smile">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" avlaible-box position-absolute w-100">
+                                        <h2 class=" mb-0 white poppins fw-600 fs-sm lh-17">Available</h2>
+                                    </div>
+                                    <div class="position-absolute farmer">
+                                        <img class=" w-100 max-w-farmer" src="./assets/images/farmer.png" alt="farmer">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="outerbox">
+                                <div class=" header-slider-box w-100 position-relative gradient-border">
+                                    <div class=" d-flex flex-column gap-16">
+                                        <h2 class="poppins fw-400 fs-lg white mb-0 lh-22">Garden Maintainer</h2>
+                                        <div class=" d-flex gap-17">
+                                            <div class=" d-flex gap-13 align-items-center">
+                                                <div class=" d-flex gap_2  ">
+                                                    <h2 class=" poppins fw-400 fs-lg lh-22 white mb-0 pt_2 ">4.4
+                                                    </h2>
+                                                    <img src="./assets/images/svg/star.svg" alt="star">
+                                                </div>
+                                                <div class=" right-line">
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex gap_7 align-items-center">
+                                                <h2 class=" poppins fw-400 fs-lg lh-22 white mb-0 text-nowrap pt_2">
+                                                    2.2
+                                                    k
+                                                </h2>
+                                                <img src="./assets/images/svg/smile.svg" alt="smile">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" avlaible-box position-absolute w-100">
+                                        <h2 class=" mb-0 white poppins fw-600 fs-sm lh-17">Available</h2>
+                                    </div>
+                                    <div class="position-absolute farmer">
+                                        <img class=" w-100 max-w-farmer" src="./assets/images/farmer.png" alt="farmer">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="outerbox">
+                                <div class=" header-slider-box w-100 position-relative gradient-border">
+                                    <div class=" d-flex flex-column gap-16">
+                                        <h2 class="poppins fw-400 fs-lg white mb-0 lh-22">Garden Maintainer</h2>
+                                        <div class=" d-flex gap-17">
+                                            <div class=" d-flex gap-13 align-items-center">
+                                                <div class=" d-flex gap_2  ">
+                                                    <h2 class=" poppins fw-400 fs-lg lh-22 white mb-0 pt_2 ">5.0
+                                                    </h2>
+                                                    <img src="./assets/images/svg/star.svg" alt="star">
+                                                </div>
+                                                <div class=" right-line">
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex gap_7 align-items-center">
+                                                <h2 class=" poppins fw-400 fs-lg lh-22 white mb-0 text-nowrap pt_2">
+                                                    2.8
+                                                    k
+                                                </h2>
+                                                <img src="./assets/images/svg/smile.svg" alt="smile">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" avlaible-box position-absolute w-100">
+                                        <h2 class=" mb-0 white poppins fw-600 fs-sm lh-17">Available</h2>
+                                    </div>
+                                    <div class="position-absolute farmer">
+                                        <img class=" w-100 max-w-farmer" src="./assets/images/farmer.png" alt="farmer">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" d-flex align-items-center justify-content-center pt-36 gap-51">
+                            <a href="https://www.facebook.com/" target="_blank" class="logo-hover"><img
+                                    src="./assets/images/svg/facebook.svg" alt="logo"></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="logo-hover"><img
+                                    src="./assets/images/svg/insta.svg" alt="logo"></a>
+                            <a href="https://www.linkedin.com/" target="_blank" class="logo-hover"><img
+                                    src="./assets/images/svg/link.svg" alt="logo"></a>
+                            <a href="https://twitter.com/?lang=en" target="_blank" class="logo-hover"><img
+                                    src="./assets/images/svg/twitter.svg" alt="logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" header-bg-image z-0 position-absolute">
+            <img class=" w-100 max-w-785" src="./assets/images/header-bg-image.png" alt="bg-line-image">
+        </div>
+        <div class=" header-elipse1 z-0 position-absolute">
+            <img class=" w-100" src="./assets/images/svg/header-elipse-1.svg" alt="elipse">
+        </div>
+        <div class=" header-elipse2 z-0 position-absolute">
+            <img class=" w-100" src="./assets/images/svg/header-elipse-2.svg" alt="elipse">
+        </div>
+        <div class=" header-elipse3 z-0 position-absolute">
+            <img class=" w-100" src="./assets/images/svg/svg3.svg" alt="elipse">
+        </div>
+        <div class=" header-elipse4 z-0 position-absolute">
+            <img class=" w-100" src="./assets/images/svg/svg4.svg" alt="elipse">
+        </div>
+
+
+    </header>
+    <section class=" position-relative">
+        <div class="container max-w-1375  ">
+            <div class=" d-flex justify-content-center pt-slider2 ">
+                <h2 class="mb-0 z-1 white poppins fw-400 lh-48 fs-4xl position-relative d-inline-block"><span
+                        class="top-border-mini">Our</span> <span class="bottom-border-mini">Products</span></h2>
+            </div>
+            <div class="overflow-hidden">
+                <div class=" second-slider    z-1 ">
+                    <div
+                        class=" card1   position-relative  w-100 gradient-border-card d-flex flex-column justify-content-end   position-relative">
+                        <div class=" d-flex justify-content-end">
+                            <img class=" z-1 cp" src="./assets/images/svg/heart.svg" alt="heart">
+                        </div>
+                        <h2 class="mb-0 white poppins fw-500 fs-3xl lh-35 pt-36 z-1">O2 Air Bedroom Plant</h2>
+                        <div class=" d-flex justify-content-between pt-32">
+                            <p class=" mb-0 white poppins fw-400 fs-2xl lh-30 z-1">₹450.00</p>
+                            <img class="z-1 cp " src="./assets/images/svg/bag.svg" alt="bag">
+                        </div>
+                        <div class="card-1-img z-0 position-absolute">
+                            <img class=" w-100 max-394" src="./assets/images/plant1.png" alt="image">
+                        </div>
+                    </div>
+                    <div
+                        class=" card1  position-relative  w-100 gradient-border-card d-flex flex-column justify-content-end   position-relative">
+                        <div class=" d-flex justify-content-end">
+                            <img class=" z-1 cp" src="./assets/images/svg/heart.svg" alt="heart">
+                        </div>
+                        <h2 class="mb-0 white poppins fw-500 fs-3xl lh-35 pt-36 z-1">O2 Air Show Plant</h2>
+                        <div class=" d-flex justify-content-between pt-32">
+                            <p class=" mb-0 white poppins fw-400 fs-2xl lh-30 z-1">₹450.00</p>
+                            <img class="z-1 cp " src="./assets/images/svg/bag.svg" alt="bag">
+                        </div>
+                        <div class="card-1-img z-0 position-absolute">
+                            <img class=" w-100 max-394" src="./assets/images/plant2.png" alt="image">
+                        </div>
+                    </div>
+                    <div
+                        class=" card1  position-relative  w-100 gradient-border-card d-flex flex-column justify-content-end   position-relative">
+                        <div class=" d-flex justify-content-end">
+                            <img class=" z-1 cp" src="./assets/images/svg/heart.svg" alt="heart">
+                        </div>
+                        <h2 class="mb-0 white poppins fw-500 fs-3xl lh-35 pt-36 z-1">O2 Air Bedroom Plant</h2>
+                        <div class=" d-flex justify-content-between pt-32">
+                            <p class=" mb-0 white poppins fw-400 fs-2xl lh-30 z-1">₹450.00</p>
+                            <img class="z-1 cp " src="./assets/images/svg/bag.svg" alt="bag">
+                        </div>
+                        <div class="card-1-img z-0 position-absolute">
+                            <img class=" w-100 max-394" src="./assets/images/plant3.png" alt="image">
+                        </div>
+                    </div>
+                    <div
+                        class=" card1  position-relative  w-100 gradient-border-card d-flex flex-column justify-content-end   position-relative">
+                        <div class=" d-flex justify-content-end">
+                            <img class=" z-1 cp" src="./assets/images/svg/heart.svg" alt="heart">
+                        </div>
+                        <h2 class="mb-0 white poppins fw-500 fs-3xl lh-35 pt-36 z-1">O2 Port Plant</h2>
+                        <div class=" d-flex justify-content-between pt-32">
+                            <p class=" mb-0 white poppins fw-400 fs-2xl lh-30 z-1">₹250.00</p>
+                            <img class="z-1 cp " src="./assets/images/svg/bag.svg" alt="bag">
+                        </div>
+                        <div class="card-1-img z-0 position-absolute">
+                            <img class=" w-100 max-394" src="./assets/images/plant4.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class=" leaf1 d-none d-md-block z-0 position-absolute">
+            <img src="./assets/images/svg/leaf1.svg" alt="elipse">
+        </div>
+        <div class=" sec2-elipse1 z-0 position-absolute">
+            <img class=" w-100" src="./assets/images/svg/sec-2-svg1.svg" alt="elipse">
+        </div>
+        <div class=" sec2-elipse2 z-0 position-absolute">
+            <img class=" w-100" src="./assets/images/svg/sec-2-elipse2.svg" alt="elipse">
+        </div>
+        <div class="pre-btn d-none d-xxl-block">
+            <div class=" left-1  position-absolute z-1">
+                <img src="./assets/images/svg/slider-left-arrow.svg" alt="arrow">
+            </div>
+        </div>
+        <div class="next-btn d-none d-xxl-block">
+            <div class=" right-1 position-absolute z-1">
+                <img src="./assets/images/svg/slider-right-arrow.svg" alt="arrow">
+            </div>
+        </div>
+    </section>
+    <section class="position-relative ">
+        <div class=" container max-w-1576 position-relative z-3">
+            <div class=" d-flex justify-content-center pt-customer">
+                <h2 class="mb-0 white poppins fw-400 lh-48 fs-4xl position-relative d-inline-block"><span
+                        class="top-border-mini">Customer</span> <span class="bottom-border-mini">Review</span></h2>
+            </div>
+            <div class=" review-py">
+                <div class=" review-slider overflow-hidden ">
+                    <div class=" review-box position-relative gradient-border-2 z-2 ">
+                        <div class=" row">
+                            <div class="col-12 d-flex justify-content-center justify-content-lg-start col-lg-4">
+                                <img class=" w-100 max-image shadow-review" src="./assets/images/img-sec-3.png"
+                                    alt="reviewer-image">
+                            </div>
+                            <div
+                                class="col-12 d-flex  mt-review mt-lg-0 col-lg-8 align-items-lg-center justify-content-lg-end ">
+                                <div class=" flex-column d-flex">
+                                    <div class=" d-flex flex-wrap justify-content-between">
+                                        <div class=" d-flex gap-16 align-items-center pe-3 pe-sm-0">
+                                            <h2 class=" mb-0 white poppins fw-400 fs-4xl lh-48 ">4.2</h2>
+                                            <img src="./assets/images/svg/big-star.svg" alt="star">
+                                        </div>
+                                        <div class=" d-flex flex-column">
+                                            <h2 class=" poppins fw-400 fs-4xl lh-48 mb-0 white">Danny Sena</h2>
+                                            <p class=" poppins fw-400 fs-md lh-21 mb-0 white">Co Founder Of Xyz
+                                                compny
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class=" mb-0 white poppins fw-400 fs-2xl lh-30 pt-text">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <div class=" d-flex justify-content-end pt-comment">
+                                        <div class=" position-relative">
+                                            <h2 class="mb-0 white poppins fw-500 fs-3xl lh-35  ">Drop Comment</h2>
+                                            <div class="border_bottom position-absolute w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=" review-box position-relative gradient-border-2 z-2 ">
+                        <div class=" row">
+                            <div class="col-12 z-2 d-flex justify-content-center justify-content-lg-start col-lg-4">
+                                <img class=" w-100 max-image shadow-review" src="./assets/images/img-sec-3-2.png"
+                                    alt="reviewer-image">
+                            </div>
+                            <div
+                                class="col-12 z-2 d-flex justify-content-lg-end align-items-lg-center  mt-4 mt-lg-0 col-lg-8">
+                                <div class=" flex-column d-flex">
+                                    <div class=" d-flex flex-wrap justify-content-between">
+                                        <div class=" d-flex gap-16 align-items-center pe-3 pe-sm-0">
+                                            <h2 class=" mb-0 white poppins fw-400 fs-4xl lh-48 ">4.2</h2>
+                                            <img src="./assets/images/svg/big-star.svg" alt="star">
+                                        </div>
+                                        <div class=" d-flex flex-column">
+                                            <h2 class=" poppins fw-400 fs-4xl lh-48 mb-0 white">Danny Sena</h2>
+                                            <p class=" poppins fw-400 fs-md lh-21 mb-0 white">Co Founder Of Xyz
+                                                compny
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class=" mb-0 white poppins fw-400 fs-2xl lh-30 pt-text">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <div class=" d-flex justify-content-end pt-comment">
+                                        <div class=" position-relative">
+                                            <h2 class="mb-0 white poppins fw-500 fs-3xl lh-35  ">Drop Comment</h2>
+                                            <div class="border_bottom position-absolute w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elipse11 position-absolute z-0">
+                            <img class=" w-100" src="./assets/images/svg/elipse11.svg" alt="elipsef">
+                        </div>
+                    </div>
+                    <div class=" review-box position-relative gradient-border-2 z-2 ">
+                        <div class=" row">
+                            <div class="col-12 d-flex justify-content-center justify-content-lg-start col-lg-4">
+                                <img class=" w-100 max-image shadow-review" src="./assets/images/img-sec-3.png"
+                                    alt="reviewer-image">
+                            </div>
+                            <div
+                                class="col-12 d-flex justify-content-lg-end mt-lg-0 align-items-lg-center  mt-review col-lg-8">
+                                <div class=" flex-column d-flex">
+                                    <div class=" d-flex flex-wrap justify-content-between">
+                                        <div class=" d-flex gap-16 align-items-center pe-3 pe-sm-0">
+                                            <h2 class=" mb-0 white poppins fw-400 fs-4xl lh-48 ">4.2</h2>
+                                            <img src="./assets/images/svg/big-star.svg" alt="star">
+                                        </div>
+                                        <div class=" d-flex flex-column">
+                                            <h2 class=" poppins fw-400 fs-4xl lh-48 mb-0 white">Danny Sena</h2>
+                                            <p class=" poppins fw-400 fs-md lh-21 mb-0 white">Co Founder Of Xyz
+                                                compny
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class=" mb-0 white poppins fw-400 fs-2xl lh-30 pt-text">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <div class=" d-flex justify-content-end pt-comment">
+                                        <div class=" position-relative">
+                                            <h2 class="mb-0 white poppins fw-500 fs-3xl lh-35  ">Drop Comment</h2>
+                                            <div class="border_bottom position-absolute w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" review-box position-relative gradient-border-2 z-2 ">
+                        <div class=" row">
+                            <div class="col-12 z-2 d-flex justify-content-center col-lg-4">
+                                <img class=" w-100 max-image shadow-review" src="./assets/images/img-sec-3-2.png"
+                                    alt="reviewer-image">
+                            </div>
+                            <div
+                                class="col-12 z-2 d-flex mt-lg-0 justify-content-lg-end align-items-lg-center mt-4  col-lg-8 ">
+                                <div class=" flex-column d-flex">
+                                    <div class=" d-flex flex-wrap justify-content-between">
+                                        <div class=" d-flex gap-16 align-items-center pe-3 pe-sm-0">
+                                            <h2 class=" mb-0 white poppins fw-400 fs-4xl lh-48 ">4.2</h2>
+                                            <img src="./assets/images/svg/big-star.svg" alt="star">
+                                        </div>
+                                        <div class=" d-flex flex-column">
+                                            <h2 class=" poppins fw-400 fs-4xl lh-48 mb-0 white">Danny Sena</h2>
+                                            <p class=" poppins fw-400 fs-md lh-21 mb-0 white">Co Founder Of Xyz
+                                                compny
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class=" mb-0 white poppins fw-400 fs-2xl lh-30 pt-text">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <div class=" d-flex justify-content-end pt-comment">
+                                        <div class=" position-relative">
+                                            <h2 class="mb-0 white poppins fw-500 fs-3xl lh-35  ">Drop Comment</h2>
+                                            <div class="border_bottom position-absolute w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elipse11 position-absolute z-0">
+                            <img class=" w-100" src="./assets/images/svg/elipse11.svg" alt="elipsef">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class=" leaf2 d-none d-md-block z-0 position-absolute">
+            <img src="./assets/images/svg/leaf2.svg" alt="elipse">
+        </div>
+        <div class=" review-elipse1 z-1 position-absolute">
+            <img class=" w-100" src="./assets/images/svg/svg11.svg" alt="elipse">
+        </div>
+
+    </section>
+    <section class=" section-4-py position-relative ">
+        <div class=" container max-w-1576 position-relative z-3">
+            <div class="row">
+                <div class="col-lg-5 justify-content-center justify-content-lg-start d-flex">
+                    <img class=" w-100 max-501" src="./assets/images/sec-4-image.png" alt="girl with flowers">
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0 justify-content-center justify-content-lg-end d-flex ">
+                    <div class=" d-flex flex-column">
+                        <div class=" d-flex justify-content-center justify-content-lg-start mt_section-4-col">
+                            <h2 class="mb-0 white poppins fw-400 lh-48 fs-4xl position-relative d-inline-block"><span
+                                    class="top-border-mini">What</span> We <span
+                                    class="bottom-border-mini">Provide</span></h2>
+                        </div>
+                        <div class=" d-flex flex-column gap-12 pt-text-section-4">
+                            <h2 class=" mb-0 white poppins fw-400 fs-3xl lh-35 text-center text-lg-start">Schedule Vice
+                                Garden Maintain</h2>
+                            <p class=" poppins fw-300 fs-lg lh-22 white max-w-870 pt-12 mb-0 text-center text-lg-start">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class=" d-flex flex-column gap-12 pt-text-3">
+                            <h2 class=" mb-0 white poppins fw-400 fs-3xl lh-35 text-center text-lg-start">As Per
+                                Requirement Garden Maintain</h2>
+                            <p class=" poppins fw-300 fs-lg lh-22 white max-w-870 pt-12 mb-0 text-center text-lg-start">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class=" d-flex flex-column gap-12 pt-text-3">
+                            <h2 class=" mb-0 white poppins fw-400 fs-3xl lh-35 text-center text-lg-start">Online Plant
+                                Selling</h2>
+                            <p class=" poppins fw-300 fs-lg lh-22 white max-w-870 pt-12 mb-0 text-center text-lg-start">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div
+                            class=" d-flex justify-content-center justify-content-lg-start gap-47 align-items-center py-btn-info ">
+                            <button class="btn-more-info green text-nowrap poppins fw-600 fs-3xl lh-35">More
+                                Info</button>
+                            <img class="cp" src="./assets/images/svg/send.svg" alt="send">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" leaf3 d-none d-md-block z-0 position-absolute">
+            <img src="./assets/images/svg/leaf3.svg" alt="elipse">
+        </div>
+        <div class=" elipse-last z-0 position-absolute">
+            <img class=" w-100" src="./assets/images/svg/leaf4.svg" alt="elipse">
+        </div>
+        <div class=" elipse-last-2 z-0 position-absolute">
+            <img class=" w-100" src="./assets/images/svg/leaf5.svg" alt="elipse">
+        </div>
+    </section>
+    <footer class="footer-bg position-relative">
+        <div class=" container max-w-1576 position-relative z-3">
+            <div class="row py-footer">
+                <div class="col-12 col-sm-6 col-xxl-4 d-flex justify-content-xxl-start ">
+                    <div class=" d-flex flex-column">
+                        <div class=" d-flex align-items-end gap-22 op-80">
+                            <img class=" cp" src="./assets/images/svg/footer-logo.svg" alt="logo">
+                            <h2 class=" mb-0 pb-3 poppins fw-700 fs-3xl lh-35 white3">Gardena</h2>
+                        </div>
+                        <p class="poppins fw-400 fs-xl lh-25 white mb-0 pt-footer-text1 max-para-1">Lorem ipsum dolor
+                            sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xxl-5 justify-content-xxl-end d-flex mt-footer">
+                    <div class=" d-flex flex-column max-525  w-100">
+                        <ul class=" m-0 px-0 pt-0 d-flex align-items-center gap-56 over_x_scroll mb-scroll ">
+                            <li><a href="" class=" poppins fw-400 fs-2xl lh-30 white under_line ">Home</a></li>
+                            <li><a href="" class=" poppins fw-400 fs-2xl lh-30 white under_line ">Gardner</a></li>
+                            <li><a href="" class=" poppins fw-400 fs-2xl lh-30 white under_line ">Contact</a></li>
+                            <li><a href="" class=" poppins fw-400 fs-2xl lh-30 white under_line ">Privacy</a></li>
+
+                        </ul>
+                        <h2 class=" poppins fw-400 fs-4xl lh-48 mb-0 white footer-p-text2">Subscribe For Updates</h2>
+                        <div
+                            class="footer-input-box w-100  mt-26 gradient-border position-relative d-flex justify-content-between align-items-center">
+                            <input type="email" name="enter email" placeholder="Enter email..."
+                                class=" poppins fw-400 fs-2xl lh-30 white opacity-50 bg-transparent border-0 w-100"
+                                style=" outline: none;">
+                            <div class=" d-flex align-items-center gap-44">
+                                <div class="line_input">
+                                </div>
+                                <img src="./assets/images/svg/right-arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm- col-xxl-3 d-flex justify-content-xxl-end mt-footer">
+                    <div class=" d-flex flex-column gap-44">
+                        <h2 class=" mb-0 white poppins fw-500 fs-3xl lh-35">Social</h2>
+                        <div class=" d-flex align-items-center gap-51">
+                            <a href="https://www.facebook.com/" target="_blank" class="logo-hover"><img
+                                    src="./assets/images/svg/facebook.svg" alt="logo"></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="logo-hover"><img
+                                    src="./assets/images/svg/insta.svg" alt="logo"></a>
+                            <a href="https://www.linkedin.com/" target="_blank" class="logo-hover"><img
+                                    src="./assets/images/svg/link.svg" alt="logo"></a>
+                            <a href="https://twitter.com/?lang=en" target="_blank" class="logo-hover"><img
+                                    src="./assets/images/svg/twitter.svg" alt="logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+                <div class=" gradient-line w-100">
+                </div>
+                <div class=" py-last-text">
+                    <h2 class=" mb-0 white poppins fw-400 fs-2xl lh-30 text-center">gardena.com© all right reserve</h2>
+                </div>
+            </div>
+
+        </div>
+        <div class=" footer-elipse-1 position-absolute z-0">
+            <img class=" w-100" src="./assets/images/svg/footer-elipse1.svg" alt="elipse">
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class="cp hithere">
+            <img src="./assets/images/svg/back-to-top.svg" alt="svg"></button>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
