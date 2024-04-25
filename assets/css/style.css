@@ -654,7 +654,7 @@
     width: 12px;
     height: 12px;
     content: '';
-    background-color: var(--dots);
+    background-color: var(--white);
     border-radius: 28px;
     text-align: center;
     transition: all 200ms linear;
