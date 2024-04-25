@@ -43,10 +43,10 @@
     <div class="loading-overlay" id="loadingOverlay">
         <div class="loader mx-5 d-flex flex-column justify-content-center align-items-center w-100">
             <img class="w-100  max-500" src="./assets/images/svg/loader.svg" alt="svg">
-            <div class="loader_1 "></div>
+            <div class="loader_1 max-550"></div>
         </div>
     </div>
-    <header class=" position-relative  z-2   ">
+    <header class=" position-relative z-2" id="home">
         <div class="container max-w-1540 ">
             <nav class=" py-navbar ">
                 <div class=" d-flex align-items-center justify-content-between z-3 position-relative">
@@ -227,7 +227,7 @@
 
 
     </header>
-    <section class=" position-relative">
+    <section class=" position-relative" id="garden">
         <div class="container max-w-1375  ">
             <div class=" d-flex justify-content-center pt-slider2 ">
                 <h2 class="mb-0 z-1 white poppins fw-400 lh-48 fs-4xl position-relative d-inline-block"><span
@@ -316,7 +316,7 @@
             </div>
         </div>
     </section>
-    <section class="position-relative ">
+    <section class="position-relative " id="privacy">
         <div class=" container max-w-1576 position-relative z-3">
             <div class=" d-flex justify-content-center pt-customer" data-aos="zoom-in-up" data-aos-duration="1000">
                 <h2 class="mb-0 white poppins fw-400 lh-48 fs-4xl position-relative d-inline-block"><span
@@ -499,7 +499,7 @@
         </div>
 
     </section>
-    <section class=" section-4-py position-relative ">
+    <section class=" section-4-py position-relative " id="contact">
         <div class=" container max-w-1576 position-relative z-3">
             <div class="row">
                 <div class="col-lg-5 justify-content-center justify-content-lg-start d-flex" data-aos="zoom-in-up"
@@ -578,10 +578,13 @@
                     data-aos-duration="1000">
                     <div class=" d-flex flex-column max-525  w-100">
                         <ul class=" m-0 px-0 pt-0 d-flex align-items-center gap-56 over_x_scroll mb-scroll ">
-                            <li><a href="" class=" poppins fw-400 fs-2xl lh-30 white under_line ">Home</a></li>
-                            <li><a href="" class=" poppins fw-400 fs-2xl lh-30 white under_line ">Gardner</a></li>
-                            <li><a href="" class=" poppins fw-400 fs-2xl lh-30 white under_line ">Contact</a></li>
-                            <li><a href="" class=" poppins fw-400 fs-2xl lh-30 white under_line ">Privacy</a></li>
+                            <li><a href="#home" class=" poppins fw-400 fs-2xl lh-30 white under_line ">Home</a></li>
+                            <li><a href="#garden" class=" poppins fw-400 fs-2xl lh-30 white under_line ">Gardner</a>
+                            </li>
+                            <li><a href="#contact" class=" poppins fw-400 fs-2xl lh-30 white under_line ">Contact</a>
+                            </li>
+                            <li><a href="#privacy" class=" poppins fw-400 fs-2xl lh-30 white under_line ">Privacy</a>
+                            </li>
 
                         </ul>
                         <h2 class=" poppins fw-400 fs-4xl lh-48 mb-0 white footer-p-text2">Subscribe For Updates</h2>

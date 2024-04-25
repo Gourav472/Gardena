@@ -729,7 +729,7 @@
 }
 
 .loader {
-    animation: fade-in-down 3s ease infinite;
+    animation: fade-in-down 2s ease infinite;
 }
 
 .max-500 {
@@ -744,7 +744,10 @@
     background: var(--white);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     box-sizing: border-box;
-    animation: animFw 8s linear infinite;
+    animation: animFw 4s linear infinite;
+}
+.max-550{
+    max-width: 550px;
 }
 
 .loader_1::after,
